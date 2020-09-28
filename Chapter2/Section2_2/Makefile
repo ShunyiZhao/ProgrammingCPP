@@ -1,6 +1,8 @@
 CC = clang++
 TEST2_9SOURCE = practice2_9
 TEST2_11SOURCE = practice2_11
+TEST2_13SOURCE = practice2_13
+TEST2_14SOURCE = practice2_14
 STD = -std=c++14
 CPPFLAGS = -O2 -Wall -Wextra -Wfloat-equal
 
@@ -11,3 +13,11 @@ test2_9RUN:
 test2_11RUN:
 	$(CC) $(TEST2_11SOURCE).cpp $(CPPFLAGS) -o $(TEST2_11SOURCE)
 	./$(TEST2_11SOURCE)
+
+test2_13RUN:
+	$(CC) $(TEST2_13SOURCE).cpp $(CPPFLAGS) -o $(TEST2_13SOURCE)
+	./$(TEST2_13SOURCE)
+
+test2_14RUN:
+	$(CC) $(TEST2_14SOURCE).cpp $(CPPFLAGS) -o $(TEST2_14SOURCE)
+	./$(TEST2_14SOURCE)
