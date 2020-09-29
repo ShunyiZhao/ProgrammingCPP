@@ -3,6 +3,8 @@ CFLAGS = -Wall -Wextra -Wfloat-equal
 TEST2_15SOURCE = practice2_15
 TEST2_16SOURCE = practice2_16
 TEST2_17SOURCE = practice2_17
+TEST2_18SOURCE = practice2_18
+TEST2_20SOURCE = practice2_20
 
 run2_15Test:
 	$(CC) $(TEST2_15SOURCE).cpp $(CFLAGS) -o $(TEST2_15SOURCE)
@@ -15,3 +17,11 @@ run2_16Test:
 run2_17Test:
 	$(CC) $(TEST2_17SOURCE).cpp $(CFLAGS) -o $(TEST2_17SOURCE)
 	./$(TEST2_17SOURCE)
+
+run2_18Test:
+	$(CC) $(TEST2_18SOURCE).cpp $(CFLAGS) -o $(TEST2_18SOURCE)
+	./$(TEST2_18SOURCE)
+
+run2_20Test:
+	$(CC) $(TEST2_20SOURCE).cpp $(CFLAGS) -o $(TEST2_20SOURCE)
+	./$(TEST2_20SOURCE)
