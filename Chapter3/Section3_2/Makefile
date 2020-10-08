@@ -1,0 +1,38 @@
+CC = clang++
+CFLAGS = -Wall -Wextra -Wfloat-equal -O2
+
+TEST3_4SOURCE = practice3_4
+TEST3_5SOURCE = practice3_5
+TEST3_6SOURCE = practice3_6
+TEST3_7SOURCE = practice3_7
+TEST3_8SOURCE = practice3_8
+TEST3_9SOURCE = practice3_9
+TEST3_10SOURCE = practice3_10
+
+run3_4:
+	$(CC) $(CFLAGS) $(TEST3_4SOURCE).cpp -o $(TEST3_4SOURCE)
+	./$(TEST3_4SOURCE)
+
+run3_5:
+	$(CC) $(CFLAGS) $(TEST3_5SOURCE).cpp -o $(TEST3_5SOURCE)
+	./$(TEST3_5SOURCE)
+
+run3_6:
+	$(CC) $(CFLAGS) $(TEST3_6SOURCE).cpp -o $(TEST3_6SOURCE)
+	./$(TEST3_6SOURCE)
+
+run3_7:
+	$(CC) $(CFLAGS) $(TEST3_7SOURCE).cpp -o $(TEST3_7SOURCE)
+	./$(TEST3_7SOURCE)
+
+run3_8:
+	$(CC) $(CFLAGS) $(TEST3_8SOURCE).cpp -o $(TEST3_8SOURCE)
+	./$(TEST3_8SOURCE)
+
+run3_9:
+	$(CC) $(CFLAGS) $(TEST3_9SOURCE).cpp -o $(TEST3_9SOURCE)
+	./$(TEST3_9SOURCE)
+
+run3_10:
+	$(CC) $(CFLAGS) $(TEST3_10SOURCE).cpp -o $(TEST3_10SOURCE)
+	./$(TEST3_10SOURCE)
