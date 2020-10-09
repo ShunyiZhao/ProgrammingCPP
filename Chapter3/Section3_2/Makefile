@@ -1,5 +1,6 @@
 CC = clang++
 CFLAGS = -Wall -Wextra -Wfloat-equal -O2
+STD = std=c++14
 
 TEST3_4SOURCE = practice3_4
 TEST3_5SOURCE = practice3_5
