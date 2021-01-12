@@ -85,8 +85,8 @@ std::istream &read(std::istream &is, Sales_item &item){
     int sales;
     is >> revenue >> sales;
 
-    item.setRevenue(revenue);
-    item.setSales(sales);
+    item.revenue = revenue;
+    item.sales = sales;
     item.setAvgPrice(revenue / sales);
 
     return is;

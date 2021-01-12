@@ -19,10 +19,6 @@ string Person::getAddress() const{
 }
 
 // set methods
-void Person::setName(string nameInputted){
-    name = nameInputted;
-}
-
 void Person::setAddress(string addressInputted){
     address = addressInputted;
 }
@@ -32,7 +28,7 @@ std::istream &read(std::istream &is, Person &person){
     string name, address;
     is >> name >> address;
 
-    person.setName(name);
+    person.name = name;
     person.setAddress(address);
 
     return is;

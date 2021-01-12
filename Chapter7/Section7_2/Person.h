@@ -12,8 +12,10 @@ public:
     // methods
     std::string getName() const;
     std::string getAddress() const;
-    void setName(std::string nameInputted);
     void setAddress(std::string addressInputted);
+// friend
+friend std::istream &read(std::istream &is, Person &person);
+friend std::ostream &print(std::ostream &os, Person person);
 };
 
 std::istream &read(std::istream &is, Person &person);

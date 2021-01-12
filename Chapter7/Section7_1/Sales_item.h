@@ -24,6 +24,10 @@ public:
     void setSales(int salesInputted);
     void setAvgPrice(float avgPriceInputted);
     void setRevenue(float revenueInputted);
+// friend functions
+friend Sales_item add(const Sales_item, const Sales_item);
+friend std::istream &read(std::istream &, Sales_item&);
+friend std::ostream &print(std::ostream &, Sales_item);
 };
 
 Sales_item add(const Sales_item, const Sales_item);
