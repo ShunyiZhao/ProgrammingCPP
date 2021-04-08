@@ -8,6 +8,9 @@ using std::string;
 using std::cerr;
 using std::endl;
 
+template <typename T>
+bool compare(T var1, T var2);
+
 int main(int argc, char **argv){
     if (argc != 1){
         cerr << "You can not use more than 1 argument in this programme!" << endl;
